@@ -7,5 +7,15 @@ public class Main {
     String lastName = "Mendoza";
     String fullName = firstName + lastName;
     System.out.println(fullName);
+    System.out.println(fullName("Mayra", "Mendoza"));
+
+    }
+
+    public static String fullName(String first, String last)
+    {
+        String fullName = first + " " + last;
+
+        return fullName;
+
     }
 }
