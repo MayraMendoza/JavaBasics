@@ -6,6 +6,6 @@ public class Main {
 	String firstName = "Mayra ";
     String lastName = "Mendoza";
     String fullName = firstName + lastName;
-        System.out.println(fullName);
+    System.out.println(fullName);
     }
 }
