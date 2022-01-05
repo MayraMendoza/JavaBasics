@@ -18,11 +18,4 @@ public class Main {
     }
 }
 
-class NameGenerator {
-    public static String generateFullName ( String first, String last)
-    {
-        String fullName = first + " " + last;
-        return fullName;
-    }
-}
 

@@ -1,0 +1,19 @@
+when a program runs it will start from the main method.
+
+ public static String fullName(String first, String last) {
+        String fullName = first + " " + last;
+
+        return fullName;
+
+if you remove static from the line above ^ it will give you an error
+main will always be static ---
+you will need to add static to other methods in the same class. (there is a workaround for this but it is best practice to be consistent with static troughout the program)
+
+public String fullName(String first, String last) {
+        String fullName = first + " " + last;
+
+        return fullName;
+
+  to use it without static
+  you will have to declare a new instance like this within thw main
+  string createdName = new main createFullName (first, Last)
