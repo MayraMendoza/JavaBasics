@@ -8,9 +8,22 @@ public class Main {
         Car car2 = new Car("MustangGt", "Ford", 30000, 0.50f );
         Car car3 = new Car("Hellcat","Dodge", 100, 0.90f);
 
-        System.out.println(car1.carInfo());
-        System.out.println(car2.carInfo());
-        System.out.println(car3.carInfo());
+        // fields are set to private - use getters to access data
+        System.out.println(car1.getMake() + " " + car1.getModel());
+        System.out.println(car2.getMake() + " " + car2.getModel());
+        System.out.println(car3.getMake() + " " +  car1.getModel());
+
+
+// This was used for the regular assignment car info method will print out the make & model of each car instance.
+//        System.out.println(car1.carInfo());
+//        System.out.println(car2.carInfo());
+//        System.out.println(car3.carInfo());
+
+
+        // Bonus call to string method that prints out each car instance make, model, milage and gas tank percentage;
+        System.out.println(car1.toString());
+        System.out.println(car2.toString());
+        System.out.println(car3.toString());
 
 
 
