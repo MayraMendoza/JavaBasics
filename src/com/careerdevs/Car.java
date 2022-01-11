@@ -19,9 +19,6 @@ public class Car {
     public String carInfo(){
 
         return "Make:" + this.make +", "+ "Model:"+ this.model;
-
-
-
     }
 
 
