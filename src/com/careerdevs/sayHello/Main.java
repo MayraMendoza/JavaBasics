@@ -31,8 +31,6 @@ public class Main {
         String fullName = NameGenerator.generateFullName(first,last);
         System.out.println("Its nice to formally meet you " + fullName);
 
-
-
     }
 
 }
