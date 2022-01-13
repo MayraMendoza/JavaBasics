@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args){
 //        // A
         Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
 //        whatIsYourName();
 //        String name = scanner.nextLine();
 //        System.out.println("Hello, nice to meet you "+ name);
@@ -37,24 +38,26 @@ public class Main {
         //            stop = scanner.next();
         //            if (stop.equalsIgnoreCase("y")) {
 
-        String stop= "y";
-        for(int i= 0; i< questions.size(); i++ ){
+//        String stop= "y";
+//        for(int i= 0; ;){
 
-                System.out.println("loop star");
-                System.out.print(questions.get(i));
-                String userResponse = scanner.nextLine();
+        int stop = 1;
+        int z =0;
+            while (stop == 1 && z< questions.size()) {
+                System.out.println(questions.get(z));
+                String userResponse = scanner1.nextLine();
                 userAnswers.add(userResponse);
+                z++;
+                System.out.println("Please enter 0 to exit or 1 to continue.");
+                stop = scanner.nextInt();
 
-
-        }
+            }
 
         System.out.println("your response:");
         for(int i= 0; i< userAnswers.size(); i++){
             System.out.println(questions.get(i) +" " + userAnswers.get(i));
 
         }
-
-
 
 
 
