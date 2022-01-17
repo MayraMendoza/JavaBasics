@@ -36,7 +36,6 @@ public class Main {
         int mileage = scanner.nextInt();
         System.out.print("Please enter gas tank percentage: ");
         float gasTankPercentage = scanner.nextFloat();
-
         Car car4 = new Car(make, model, mileage, gasTankPercentage);
         return car4.toString();
     }
