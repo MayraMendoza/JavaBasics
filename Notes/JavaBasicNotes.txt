@@ -17,3 +17,13 @@ public String fullName(String first, String last) {
   to use it without static
   you will have to declare a new instance like this within thw main
   string createdName = new main createFullName (first, Last)
+
+
+
+  ----------------------------------Static vs non-Static -----------------------------
+  // static implementation
+  // people.firstName
+
+  // non-static implementation
+  // you will need to declare a new instance
+  // new people().firstName

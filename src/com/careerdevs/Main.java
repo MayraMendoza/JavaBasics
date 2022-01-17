@@ -1,5 +1,7 @@
 package com.careerdevs;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -21,16 +23,46 @@ public class Main {
 
 
         // Bonus call to string method that prints out each car instance make, model, milage and gas tank percentage;
-        System.out.println(car1.toString());
-        System.out.println(car2.toString());
-        System.out.println(car3.toString());
+        System.out.println(car1);
+        System.out.println(car2);
+        System.out.println(car3);
+
+//        // bonus solution array
+//        Car[] myCarArr = new Car[3];
+//        myCarArr[0] = car1;
+//        myCarArr[1] = car2;
+//        myCarArr[2] = car3;
+//
+//        System.out.println(myCarArr[0].make);
+//
+//        //OR
+        Car[] carArr= new Car[] {car1, car2, car3};
+
+        // dont need to specify length.
+        ArrayList<Car> carArrayList = new ArrayList<>();
+        carArrayList.add(car1);
+        carArrayList.add(car2);
+        carArrayList.add(car3);
+        // how you would output data
+        for(int i =0; i< carArr.length ; i++ ){
+            Car tempCar = carArr[i];
+            // get model because field is private
+            System.out.println(tempCar.getMake() +" " + tempCar.getModel());
+        }
+
+        //array list
+        for(int i =0; i< carArrayList.size(); i++){
+            Car tempCar = carArrayList.get(i);
+            System.out.println(tempCar.getMake() +" " + tempCar.getModel());
+
+        }
 
 
 
 
 
 
-
+//        //----------------------------------------------------------------------------------
 
 //        String firstName = "Mayra";
 //        String lastName = "Mendoza";
