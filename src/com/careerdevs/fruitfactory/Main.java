@@ -30,5 +30,6 @@ public class Main {
 
         //print userGeneratedfruit value
         System.out.println(userGeneratedFruit.toString());
+
     }
 }
