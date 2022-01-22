@@ -18,7 +18,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //ask questions
-        System.out.println("Please enter fruit name: ");
+        System.out.print("Please enter fruit name: ");
         String fruitInput = scanner.nextLine();
         System.out.print("Please enter fruit color: ");
         String fruitColorInput = scanner.nextLine();
